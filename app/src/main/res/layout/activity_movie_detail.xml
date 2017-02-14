@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+	>
+
+
+
+	<ScrollView
+		android:id="@+id/sw_movie_detail"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		android:layout_margin="16dp"
+		>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+			    android:layout_margin="16dp"
+				>
+
+				<ImageView
+					android:id="@+id/i_details_poster"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:adjustViewBounds="true"
+					android:background="#000000"
+					android:padding="3px"
+					android:scaleType="centerCrop"
+				    android:layout_weight="1"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+				    android:paddingLeft="16dp"
+					android:layout_weight="1"
+					>
+
+					<TextView
+						android:id="@+id/tv_details_title"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textStyle="bold"
+						android:textSize="32sp"
+						/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+					    android:text="@string/title_released"
+						android:textStyle="bold"
+						android:textSize="16sp"
+						/>
+
+					<TextView
+						android:id="@+id/tv_details_date"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:text="@string/title_user_rating"
+						android:textStyle="bold"
+						android:textSize="16sp"
+						/>
+
+					<TextView
+						android:id="@+id/tv_details_rating"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+					    android:textSize="16sp"
+						/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="16dp"
+				android:text="@string/title_synopsis"
+				android:textStyle="bold"
+				android:textSize="16sp"
+				/>
+
+			<TextView
+				android:id="@+id/tv_details_synopsis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="16dp"
+				android:layout_marginLeft="16dp"
+				android:textSize="16sp"
+				/>
+		</LinearLayout>
+
+	</ScrollView>
+
+	<TextView
+		android:id="@+id/tv_movie_details_network_problem"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/error_network_problem"
+		android:textSize="24sp"
+		android:visibility="invisible"
+		android:padding="16dp"
+		/>
+
+
+	<ProgressBar
+		android:id="@+id/pb_movie_details"
+		android:layout_height="42dp"
+		android:layout_width="42dp"
+		android:layout_gravity="center"
+		android:visibility="invisible" />
+
+</LinearLayout>

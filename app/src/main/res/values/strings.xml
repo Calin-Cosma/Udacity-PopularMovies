@@ -1,0 +1,31 @@
+<resources>
+	<string name="app_name">Popular Movies</string>
+
+	<string name="movie_db_url_base" translatable="false">https://api.themoviedb.org/3</string>
+	<string name="movie_db_url_movie_details" translatable="false">/movie</string>
+	<string name="movie_db_url_popular" translatable="false">/movie/popular</string>
+	<string name="movie_db_url_top_rated" translatable="false">/movie/top_rated</string>
+
+	<string name="movie_db_api_key" translatable="false">c80831a386b9daded46526f974fe2c00</string>
+	<string name="movie_db_param_api_key" translatable="false">api_key</string>
+	<string name="movie_db_param_language" translatable="false">language</string>
+	<string name="movie_db_param_page" translatable="false">page</string>
+
+	<string name="movie_db_img_url_base" translatable="false">http://image.tmdb.org/t/p/</string>
+	<string name="movie_db_img_url_size" translatable="false">w500</string>
+
+	<string name="date_format">d MMMM yyyy</string>
+
+	<string name="title_released">Released</string>
+	<string name="title_user_rating">User rating</string>
+	<string name="title_synopsis">Synopsis</string>
+
+	<string name="menu_popular">Popular</string>
+	<string name="menu_top_rated">Top Rated</string>
+
+
+	<string name="error_network_problem">Content couldn\'t be loaded because of network problems.</string>
+	<string name="error_no_api_key_1">No API key found.</string>
+	<string name="error_no_api_key_2">Please go to res/values/strings.xml and set the API key as the value for the movie_db_api_key string.</string>
+	<string name="error_no_api_key_3">If you don\'t have one, get a free one from https://www.themoviedb.org/</string>
+</resources>
